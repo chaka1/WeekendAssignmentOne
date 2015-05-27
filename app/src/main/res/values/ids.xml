@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="login_fragment"/>
+    <item type="id" name="details_fragment"/>
+    <item type="id" name="manager_list_fragment"/>
+    <item type="id" name="sign_up_fragment"/>
+
+</resources>

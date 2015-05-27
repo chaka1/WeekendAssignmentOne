@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.chaka.weekendassignmentone.frag.SignUpFragment">
+
+    <com.iangclifton.android.floatlabel.FloatLabel
+        android:id="@+id/flName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_alignParentLeft="true" />
+    <com.iangclifton.android.floatlabel.FloatLabel
+        android:id="@+id/flNi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ni"
+        android:layout_below="@+id/flName"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_alignParentLeft="true"/>
+    <com.iangclifton.android.floatlabel.FloatLabel
+        android:id="@+id/flPassport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passport"
+        android:layout_below="@+id/flNi"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_alignParentLeft="true"/>
+    <com.iangclifton.android.floatlabel.FloatLabel
+        android:id="@+id/flPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_below="@+id/flPassport"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_alignParentLeft="true"/>
+    <com.iangclifton.android.floatlabel.FloatLabel
+        android:id="@+id/flConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:layout_below="@+id/flPassword"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_account_box" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/radioGender"
+        android:layout_alignBottom="@+id/radioGender"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGender"
+        android:layout_below="@+id/flConfirmPassword"
+        android:orientation="horizontal"
+        android:labelFor="@string/gender"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/textView"
+        android:layout_toEndOf="@+id/textView">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:id="@+id/radioButton"
+            android:layout_below="@+id/flConfirmPassword"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:id="@+id/radioButton2"
+
+            android:layout_below="@+id/flConfirmPassword"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_birth"
+        android:id="@+id/button3"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:id="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:entries="@array/countries_array"
+        android:nestedScrollingEnabled="false"
+        android:spinnerMode="dialog" />
+
+</RelativeLayout>
+</ScrollView>
